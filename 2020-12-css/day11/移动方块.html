@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: blue;
+        }
+        .main{
+            width: 500px;
+            height: 500px;
+            border: 1px solid  black;
+            margin: 0 auto;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background: rgb(255, 0, 0);
+            animation: run 5s linear infinite;
+        }
+        @keyframes run{
+            0%{
+                transform: translate(0);
+            }
+            25%{
+                transform: translatex(400px);
+                background: chartreuse;
+                border-radius: 25%;
+            }
+            50%{
+                transform: translate(400px,400px);
+                background: darkcyan;
+                border-radius: 50%;
+            }
+            75%{
+                transform: translatey(400px);
+                background: darkmagenta;
+                border-radius: 25%;
+            }
+            100%{
+                transform: translatey(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

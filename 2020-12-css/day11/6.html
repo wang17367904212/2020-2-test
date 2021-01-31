@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: rgb(248, 0, 0);
+            /* 
+            第一个值：过渡到属性
+            第二个值：动画执行的时间
+            第三个值：动画运动的曲线
+            第四个值：延迟的时间
+            */
+            transition: all 1s linear 0.5s;
+            /* all 就是所有发生变化的属性 */
+        }
+        .box:hover{
+            width: 400px;
+            background: rgba(162, 0, 255, 0.562);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 里面可以跟具体的数字：
+            选中ul里面的第n个子元素
+        */
+        /* ul>li:nth-child(2){
+            background: lawngreen;
+        } */
+        /* 选中奇数行 */
+        ul>li:nth-child(odd){
+            background: lightcoral;
+        }
+        /* 选中偶数行 */
+        ul>li:nth-child(even){
+            background: lightseagreen;
+        }
+        /* 选中第一个 */
+        ul>li:first-child{
+            background: lime;
+        }
+        /* 选中最后一个 */
+        ul>li:last-child{
+            background: magenta;
+        }
+        ul>li:nth-last-child(4){
+            background: mediumblue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+    </ul>
+</body>
+</html>

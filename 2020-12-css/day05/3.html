@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        margin 穿透值：
+        有两个小盒子，大盒子里面包含的小盒子，给小盒子设置一个margin-top，结果：大盒子会跟着小盒子一起掉
+        解决办法：
+        - 第一中解决办法，设置border成透明色
+        - 第二种解决办法 ：溢出隐藏 overflow: hidden;
+        - 第三种解决办法办法：大盒子设置padding
+        margin值合并：
+        有两个兄弟元素：box1，box2，给box1早垂直的的方向上设置了，margin-bottom：30px；给box2设置了marin-top：100px；他俩直接的一个距离并不是100+30,而是看谁大，中间的距离就是谁，比如下面的例子，最终的距离：100px
+         */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .par{
+            width:200px;
+            height: 200px;
+            background-color: red;
+            /* 结局办法，设置成透明色 */
+            /* border: 1px outset transparent;*/
+            /* box-sizing: border-box;  */
+            /* 第二种解决办法 ：溢出隐藏*/
+            overflow: hidden;
+            /* 第三种解决办法办法：大盒子设置padding */
+            /* padding: 10px; */
+
+        }
+        #box1{
+            width: 50px;
+            height: 50px;
+            background-color: greenyellow;
+            margin-top: 10px;
+            /* margin-left: 10px; */
+            margin-bottom: 10px;
+        }
+        #box2{
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="par">
+        <div id="box1"></div>
+        <div id="box2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,247 @@
+/* 版心 */
+.md{
+    width: 1226px;
+    margin: 0 auto;
+}
+/* 首页样式 */
+.adv{
+    height: 120px;
+    background: url(../images/adv1.jpg)
+    center center no-repeat;
+    background-size: cover;
+}
+/* 从外向内，从上往下，从左到右 */
+.nav{
+    background-color: #333;
+}
+.navBd{
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+}
+.navBd a{
+    color: #b0b0b0;
+}
+.navBd a:hover{
+    color:#fff;
+}
+.navLeft{
+    height: 100%;
+    float: left;   
+}
+.navLeft a,.navLeft span{
+    float: left;
+}
+.navLeft span,.navRight span{
+    margin: 0 3.6px;
+    color: #424242;
+}
+.navRight{
+    height: 100%;
+    float: right;
+}
+.navRight a,.navRight span{
+    float: left;
+}
+.navRight .cart{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    background: #424242;
+    margin-left: 40px;
+}
+.navRight .cart:hover{
+    color: #ff6700;
+    background:#fff ;
+}
+/* 灰色区域 */
+.grayArea{
+    background:lavender;
+}
+/* 手机模块  */
+.phone .top{
+    height: 58px;
+    line-height: 58px;
+}
+.phone .bottom{
+    height: 614px;
+}
+.phone .title{
+    float: left;
+    font-size: 22px;
+    font-weight: 200;
+    color: #333;
+}
+.phone .all{
+    float:right;
+    color: #424242;
+}
+.phone .all:hover{
+    color: #ff6700;
+}
+.phone .left{
+    width: 234px;
+    height: 614px;
+    background: url(../images/bg.webp)center center no-repeat;
+    float: left;
+    background-size: cover;
+}
+.phone .lists{
+    float: left;
+    width: 992px;
+    height: 614px;
+}
+.lists>li{
+    width: 234px;
+    height: 300px;
+    background: #ffffff;
+    /* padding: 20px 0px; */
+    float: left;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    text-align: center;
+}
+.lists>li a{
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 12px;
+    padding-top:20px;
+}
+.lists>li a img{
+    width: 160px;
+    display: block;
+    margin: 0 auto;
+}
+.lists>li h5{
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+}
+.lists>li .des{
+    color:#b0b0b0;
+    margin:10px 0;
+}
+.lists>li .price{
+   color: #ff6700;
+}
+/* 广告条 */
+.grayArea .adv2{
+    overflow: hidden;
+}
+ .adv2 a{
+     background: url("../images/gg1.webp") center center no-repeat;
+     background-size: cover;
+    width: 1226px;
+    height: 120px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    float: left;
+}
+/* 家电 */ 
+
+.home .homeTop{
+    height: 58px;
+    line-height: 58px;
+  
+}
+.home .title{
+    float: left;
+    font-size: 22px;
+    font-weight: 200;
+    color: #333;
+}
+.home .homeTopLink a:hover {
+    border-bottom: 2px solid #ff6700;
+    color: #ff6700;
+}
+.home .homeTopLink{
+    float:right;
+}
+.homeBottom>li{
+    width: 234px;
+    height: 300px;
+    background: #ffffff;
+    float: left;
+    margin: 0px 14px  14px 0px;
+}
+.homeBottom .mar{
+    margin-right: 0px   ;
+}
+.homeBottom>li:nth-last-child(1),.homeBottom>li:nth-last-child(2){
+    height: 143px;
+}
+/* 白色区域 */
+.whiteArea{
+    background: #ffffff;
+}
+/* 轮播区域 */
+.bannerWrap{
+    height: 460px;
+    background: aqua;
+    position: relative;
+}
+.banner a{
+    display: block;
+    height: 460px;
+    background:url(../images/banner1.webp) center  center  no-repeat;
+    background-size: cover;
+}
+.slideBar{
+    width: 234px;
+    height: 460px;
+    background: rgba(105, 101, 101, .6);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.slideBar a{
+    color: #ffffff;
+    font-size: 14px;
+    background: url(../images/arrow.png) 200px center no-repeat;
+    display: block;
+}
+.slideBar li{
+    height: 42px;
+    line-height: 42px;
+    text-indent: 25px;
+}
+.slideBar li:hover{
+    background: #ff6700;
+
+}
+.leftArrow,.rightArrow{
+    width: 41px;
+    height: 69px;
+    background:url(../images/icon-slides.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+}
+.leftArrow{
+    left: 234px;
+    background-position: -84px 0;
+}
+.leftArrow:hover{
+    background-position: 0 0;
+}
+.rightArrow{
+    right: 0;
+    background-position: -126px 0;
+}
+.rightArrow:hover{
+    background-position: -41px 0;
+}
+.content{
+    width: 500px;
+    height: 460px;
+    background: #ffffff;
+    position: absolute;
+    left: 234px;
+    top: 0;
+    display: none;
+}
+.slideBar>li:hover .content{
+    display: block;
+}

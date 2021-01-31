@@ -1,0 +1,217 @@
+whiteArea {
+    background-color: #fff;
+}
+.md {
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav {
+    height: 52px;
+    line-height: 52px;
+    margin: 16px 0;
+}
+.nav a {
+    color: #2a2a2a;
+}
+.logo {
+    width: 176px;
+    height: 52px;
+    background: url("../images/logo1.png") center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    float: left;
+}
+.logo>a {
+    display: block;
+    height: 52px;
+}
+.nav .links {
+    float: left;
+}
+.nav .message {
+    float: right;
+}
+.nav .links a {
+    margin-left: 55px;
+}
+.nav .cartBtn img {
+    vertical-align: middle;
+    margin-right: 7px;
+}
+.nav .logIn {
+    margin: 0 37px;
+}
+/* 轮播区域 */
+.bannerBox {
+    height: 360px;
+    position: relative;
+}
+.banner a {
+    height: 360px;
+    display: block;
+    background: url("../images/banner1.png") center center no-repeat;
+}
+.sliderBar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(2, 0, 0,0.2);
+    width: 240px;
+}
+.sliderBar a {
+    display: block;
+    height: 72px;
+    line-height: 72px;
+    border-bottom: 1px dotted #fff;
+    color: #fff;
+    box-sizing: border-box;
+    position: relative;
+}
+.sliderBar li:last-child>a {
+    border-bottom: none;
+}
+.sliderBar li {
+    padding: 0 30px;
+}
+.sliderBar li:hover {
+    background: rgb(11, 11, 11,0.3);
+}
+.content {
+    width: 500px;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    left: 240px;
+    display: none;
+    background: blue;
+}
+.sliderBar li:hover .content {
+    display: block;
+}
+.sliderBar li>a::after {
+    content: "";
+    width: 7px;
+    height: 13px;
+    background: url("../images/arrow.png");
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+.recomment h3{
+    font-size: 16px;
+    color: #2b2b2b;
+    margin: 39px 0 19px 0;
+    line-height: 1;
+}
+.lists li{
+    position: relative;
+    width: 251px;
+    box-shadow: 0px 0px 10px 0px  rgba(0,0, 0, 0.3);
+    float: left;
+    margin-right: 65px;
+}
+.lists li:last-child{
+    margin-right: 0;
+}
+.lists li a{
+    height: 184px;
+    width: 251px;
+    display: block;
+    background: url(../images/shizhan1.png) center top no-repeat;
+}
+.recomment .layer{
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px 15px 0;
+    box-sizing: border-box;
+}
+.recomment .layer h5{
+    color: #1e1e1e;
+    font-size: 14px;
+    line-height: 1;
+}
+.recomment .layer .title{
+    margin: 6px 0 10px; 
+}
+.recomment .top p{
+    font-size: 12px;
+    color: #9d9d9d;
+   
+}
+.recomment .bottom{
+    line-height: 43px;
+    height: 43px;
+    color: #9d9d9d9;
+}
+.recomment .meessage .price{
+    color: #c71b1b;
+    float: left;
+}
+.recomment .meessage .num{
+    float: right;
+}
+.lists .top{
+    height: 40px;
+    overflow: hidden;
+    /* 过度
+    第一个值：过度的属性
+    第二个值：动画执行时间
+    第三个值：运动曲线
+    */
+    transition: height 0.5s linear;
+}
+.recomment li:hover .top{
+    height: 76px;
+}
+/* 灰色区域 */
+.greyArea {
+    background: #f3f5f7;
+    margin-top: 34px;
+    padding:34px 0 54px;
+
+}
+.greyIn>a,.greyIn>div{
+    margin-right: 24px;
+    float: left;
+    height: 380px;
+}
+.greyArea .first{
+    width: 224px;
+    background: url(../images/第一部分.png) center center no-repeat;
+}
+.greyArea .two{
+    width: 397px;
+}
+.greyArea .three{
+    width: 254px;
+    background: lightcyan;
+}
+.greyArea .four{
+    width: 251px;
+    background: aquamarine;
+    margin-right: 0;
+}
+.greyIn .two>a{
+    height: 180px;
+    display: block;
+}
+.greyIn .two>a:nth-child(1){
+    background: url(../images/第二部分.png) center center no-repeat ;
+}
+.greyIn .two>a:nth-child(2){
+    background: url(../images/第三部分.png) center center no-repeat ;
+    margin-top: 12px;
+}
+.bottomkArea .foot1{
+    height: 272px;
+    background: #2e2e2e;
+    border-bottom: 2px solid #020202;
+}
+.bottomkArea .foot2{
+    height: 92px;   
+    background: #212121;
+    border-bottom: 2px solid #5b5c5c;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- 
+        meta:vp +enter 
+        
+     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 
+        把一个pc端的页面放到移动端，默认情况下的
+         */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 100px;
+            height: 100px;
+            background: turquoise;
+        }
+        /* 当用户屏幕设备小于等于600的时候，满足这个条件 */
+        @media screen and (max-width: 600px){
+            .main{
+                width: 50px;
+                height: 50px;
+                background: tomato;
+            }
+        } 
+        /* 大于等于601 小于等于999 */
+        @media screen and (min-width:601px ) and (max-width:999px){
+            body{
+                background: deeppink;
+            }            
+            .main{
+                color: deepskyblue;
+            }
+        }
+        /* 大于100的时候 */
+        @media screen and (min-width: 1000px) {
+            .main{
+                width: 120px;
+                height: 120px;
+                background: darkviolet;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">啦啦啦啦</div>
+</body>
+</html>

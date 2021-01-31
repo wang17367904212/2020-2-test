@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: seagreen;
+            /* 
+             infinite：无限循环
+             forwards：让动画停留在最后一帧
+             backwards：如果动画中有延迟，想让元素快速从第一帧开始，
+             both：是forwards和backwards的结合
+             */
+            animation: run 3s linear 1s both;
+        }
+        @keyframes run{
+            0%{
+                transform: translate(1000px);
+            }
+            25%{
+                transform: translatex(100px);
+            }
+            50%{
+                transform: translatey(200px);
+            }
+            75%{
+                transform: translatex(300px);
+            }
+            100%{
+                transform: translatey(400px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

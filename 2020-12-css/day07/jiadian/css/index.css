@@ -1,0 +1,13 @@
+.phone{
+    background: olive;
+}
+. .phone .top{
+    /* background: orange; */
+    width: 1226px;
+    height: 800px;
+    background: olive;
+    margin: 0 auto;
+}
+.bottom{
+    background: orchid;
+}

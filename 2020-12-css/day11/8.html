@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background: url(1.jpg) center center no-repeat;
+            background-size: cover;
+            animation: music 3s linear infinite;
+        }
+         @keyframes music{
+             form{
+                 transform: rotate(0deg);
+             }
+             to{
+                 transform: rotate(360deg);
+             }
+         }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: black;
+        }
+        .main{
+            width: 300px;
+            height: 20px;
+            /* background: whitesmoke; */
+            margin: 100px auto;
+            overflow: hidden;
+            padding: 3px;
+            border-radius: 10px;
+            border: blueviolet 2px solid;
+            box-shadow: 0 0 0 0 white;
+        }
+        .box{
+            height: 100%;
+            border-radius: 10px;
+            background: -webkit-linear-gradient(45deg,
+            #b5e61d 0%,
+                #b5e61d 25%,
+                #fff200 25%,
+                #fff200 50%,
+                #b5e61d 50%,
+                #b5e61d 75%,
+                #fff200 75%,
+                #fff200 100%
+            );
+            background:linear-gradient(45deg,
+            #b5e61d 0%,
+                #b5e61d 25%,
+                #fff200 25%,
+                #fff200 50%,
+                #b5e61d 50%,
+                #b5e61d 75%,
+                #fff200 75%,
+                #fff200 100%
+            );
+            animation: run 3s  infinite;
+            background-size: 20px 20px;
+        }
+        /* @keyframes run{
+            0%{
+                transform: translate(-300px);
+            }
+            100%{
+                transform: translate(0);
+                background-position: 100px 20px;
+            }
+        } */
+        @keyframes run{
+            0%{
+                width: 0;
+            }
+            
+            100%{
+                width: 100%;
+                background-position: 100px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

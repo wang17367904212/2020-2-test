@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        两个行内快在一行显示，如果代码中出现了换行，页面中会出现间距，怎么消除？
+        - 消除代码中的换行
+        - 给给父级元素设置font-size: 0;
+        这个例子中,如果一个盒子写了文字,另一个没写,会产生盒子掉落,因为在垂直方向上默认的对齐方式是:基线对齐.根基情况去改此值:
+        - vertical-align: top;
+        - vertical-align: middle;
+        - vertical-align: baseline;
+        - vertical-align: bottom;
+         */
+
+        .box1,.box2{
+            width: 100px;
+            height: 100px;
+            background-color: seagreen;
+            display: inline-block;
+            vertical-align: middle;
+            /* 左浮动 */
+            /* float: left; */
+            /* 右浮动 */
+            /* float: right; */
+        }
+        .box2{
+            background: slateblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box</div>
+    <div class="box2"></div>
+
+</body>
+</html>

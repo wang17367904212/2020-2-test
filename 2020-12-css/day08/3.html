@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: mediumorchid;
+            /* 相对定位：
+            1、相对于原来的位置进行挪动
+            2、没有拓脱离欧统文档流，还占位
+            3、相互对定位元素的层级要高于普通文档流的元素
+             */
+            position: relative;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        定位的方式：position
+        - static 静态定位（默认的A）
+        - relative 相对定位
+        - absolute 绝对定位
+        - fixed 固定定位
+        
+        控制方向：left right top bottom 
+     -->
+     <div class="box"></div>
+     <biv class="box1"></biv>
+</body>
+</html>

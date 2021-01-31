@@ -1,0 +1,137 @@
+html,body,.bannerWrap{
+    height: 100%;
+}
+.bannerWrap{
+    position: relative;
+}
+/* 控制轮播图大小 */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+#slide1{
+    background: url(../images/hero-bg-2.jpg) center center no-repeat;
+    background-size: cover;
+}
+#slide2{
+    background: url(../images/hero-bg-3.jpg) center center no-repeat;
+    background-size: cover;
+}
+#slide3{
+    background: url(../images/hero-bg-4.jpg) center center no-repeat;
+    background-size: cover;
+}
+/* 共用版心 */
+.md{
+    width: 1080px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.headBox{
+    position: absolute;
+    left: 0;
+    top:14px;
+    height: 56px;
+    width: 100%;
+    z-index: 9;
+}
+.headBoxIn{
+    height: 100%;
+}
+.logo{
+    width: 100px;
+    height: 37px;
+    float: left;
+    margin-top: 10px;
+}
+.navBox{
+    float: right;
+    line-height: 56px;
+}
+.navBox>a{
+    float: left;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+}
+.advBox{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    z-index: 9;
+}
+
+.advBoxIn h1{
+    font-size: 66px;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+.advBoxIn a{
+    width: 295px;
+    height: 57px;
+    line-height: 57px;
+    text-align: center;
+    display: block;
+    background: rgb(0, 0, 0,0.5);
+    color: #fff;
+    font-size: 22px;
+    border-radius: 8px;
+}
+/* 推荐 */
+.recomment li {
+    width: 25%;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    float: left;
+    border-top-width: 2px;
+    background: url(../images/promo-01.jpg) center center no-repeat;
+    background-size: cover;
+}
+.recomment li>a{
+    display: block;
+    height: 258px;
+}
+.recomment li:first-child{
+    border-left: none;
+}
+.recomment li:last-child{
+    border-right: none;
+}
+.recomment li h3{
+    font-size: 24px;
+    color: #fff;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-weight: normal;
+    padding-top: 30px;
+}
+/* @media screen and (max-weight:1080px){
+
+} */
+
+@media screen and (min-width:641px) and (max-width:1080px){
+    .md{
+        width:100%;
+    }
+    .navBox{
+        display: none;
+    }
+    .recomment li{
+        width: 50%;
+    }
+}
+@media screen and (max-width:640px) {
+    .advBoxIn h1{
+        font-size: 36px;
+    }
+    .md{
+        width:100%;
+    }
+    .recomment li{
+        width: 100%;
+    }   
+}
